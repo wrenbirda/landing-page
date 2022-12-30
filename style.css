@@ -8,7 +8,38 @@ body, * {
 
 .header {
     background-color: #1F2937;
+    padding: 0 200px;
 
+}
+
+.top {
+    margin-bottom: 120px;
+    padding-top: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.links {
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+
+.middle {
+    display: flex;
+}
+
+.meow, .img {
+    flex: 1;
 }
 
 h1 {
@@ -20,15 +51,4 @@ h1 {
 h2, .links {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-.logo {
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.links {
-    display: flex;
 }
