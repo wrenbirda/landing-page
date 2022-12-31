@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* don't forget that box-sizing: border-box; may save your ass with align-items: center;. It's why the grey box wouldn't get text aligning how you wanted */
+
 body, * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+/*    outline: 1px solid red; */
 }
 
 .header {
     background-color: #1F2937;
     padding: 0 200px;
     height: 600px;
-
 }
+
+.second {
+    background-color: #F9FAF8;
+    text-align: center;
+}
+
+
+
 
 .top {
     margin-bottom: 120px;
@@ -43,7 +55,7 @@ body, * {
     gap: 20px;
 }
 
-.meow, .img {
+.container, .img {
     flex: 1;
 }
 
@@ -58,9 +70,9 @@ h1 {
     color: #F9FAF8;
 }
 
-h2, .links {
+h2, .links, p {
     font-size: 18px;
-    color: #c7c8c9;
+    color: #A9AAA8;
     font-weight: lighter;
 }
 
@@ -71,4 +83,32 @@ button {
     padding: 8px 32px;
     background-color: #3882F6;
     color: white;
+}
+
+
+
+.text {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 48px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+.individual {
+    width: 150px;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 5px solid #3882FC;
 }
