@@ -2,30 +2,49 @@
 
 /* don't forget that box-sizing: border-box; may save your ass with align-items: center;. It's why the grey box wouldn't get text aligning how you wanted */
 
+/* main text and non-class styling */
 body, * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
-/*    outline: 1px solid red; */
+    font-family: 'Roboto'; /*
+    outline: 1px solid red; */
+    text-decoration: none;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+h2, .links, p, button {
+    font-size: 18px;
+    color: #A9AAA8;
+    font-weight: lighter;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    margin-top: 16px;
+    padding: 8px 32px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+
+
+/* header - first section of four on the landing page */
 .header {
     background-color: #1F2937;
-    padding: 0 200px;
-    height: 600px;
+    padding: 0 200px 200px 200px;
 }
 
-.second {
-    background-color: #F9FAF8;
-    text-align: center;
-}
-
-
-
-
-.top {
+/* bar of information at the top of the page in header section */
+.top-bar {
     margin-bottom: 120px;
     padding-top: 10px;
+    min-width: 400px;
 }
 
 .logo {
@@ -45,49 +64,35 @@ body, * {
     gap: 16px;
 }
 
-
-
-.middle {
+/* hero text and image in header supgroup */
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 20px;
 }
 
-.container, .img {
-    flex: 1;
+.text-container, .image-container {
+    width: 100%;
+    min-width: 200px;
 }
 
-img {
-    min-width: 50px;
-    max-width: 450px;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-}
-
-h2, .links, p {
-    font-size: 18px;
-    color: #A9AAA8;
-    font-weight: lighter;
-}
-
-button {
-    border-radius: 10px;
-    border: none;
-    margin-top: 16px;
-    padding: 8px 32px;
-    background-color: #3882F6;
-    color: white;
+.spaniel {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 
 
-.text {
+/* second - second section of four on the landing page */
+.second {
+    background-color: #F9FAF8;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.second-text {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
@@ -101,7 +106,7 @@ button {
     margin-bottom: 48px;
   }
 
-.individual {
+.individual-icons {
     width: 150px;
 }
 
@@ -111,4 +116,61 @@ button {
     border-radius: 10px;
     box-sizing: border-box;
     border: 5px solid #3882FC;
+}
+
+
+
+/* quote section - third of four sections */
+.quote {
+    background-color: #E5E7EB;
+    padding: 120px 400px;
+}
+
+blockquote {
+    font-size: 34px;
+    font-weight: light;
+    font-style: italic;
+    color: #505959;
+}
+
+.citation {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 12px;
+    text-align: end;
+}
+
+
+
+/* action section - fourth of four sections */
+.action {
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 100px 200px;
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-header{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.action-sub {
+    font-size: 16px;
+    font-weight: 100;
+    color: #E5E7EB;
+}
+
+button.click-me {
+    border: 5px solid white;
+    margin-left: 24px;
+}
+
+a {
+    color: white;
 }
